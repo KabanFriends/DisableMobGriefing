@@ -73,7 +73,7 @@ public final class DisableMobGriefing extends JavaPlugin implements Listener {
             if (isVerbose) {
                 getLogger().info(entityType + " griefing is disabled.");
             }
-            event.setCancelled(true);
+            event.blockList().clear();
         }
     }
 
